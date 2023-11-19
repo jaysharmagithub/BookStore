@@ -1,0 +1,94 @@
+/* universal style */
+html {
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+/* header background style rule */
+ header {
+    background-image: url("bill.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position-x: left ;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 3em 2em;
+    height: 12em;
+ }
+
+ /* caption  style rule */
+
+header h1 {
+    color: #ffffff;
+    background-color: darkred;
+    display:inline;
+    font-family: cursive;
+    font-size: 2.5em;
+    padding: 0.55em 1.25em;
+ }
+
+ /* heading  style rule */
+
+ .heading {
+    text-align: center;
+    font-family: cursive;
+    padding: 3em;
+ }
+
+ .Selected-titles, .contact-caption {
+    color: #ffffff;
+    background-color: darkred;
+    font-size: 85%;
+    text-transform: uppercase;
+    display: inline;
+    padding: 0.75em 1.25em;
+    letter-spacing: 0.125em;
+
+ }
+
+ .books, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em 0;
+ }
+
+ .individual-book,.map {
+    margin: 1em;
+ }
+
+ footer {
+    text-align: center;
+    padding-bottom: 1em;
+ }
+
+ @media only screen and (max-width: 660px) {
+    header {
+        background: url("bill.jpg") no-repeat top center;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom:0;
+        padding-top: 5em;
+    }
+
+    header h1 {
+        display: block;
+        font-size: 1.75em;
+    }
+
+    .Selected-titles, .contact-caption{
+        display: block;
+        text-align: center;
+    }
+
+    .individual-book {
+        width: 35%;
+        height: 65%;
+    }
+ }
+
